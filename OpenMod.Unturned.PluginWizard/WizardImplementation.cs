@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TemplateWizard;
 using System;
 using System.Collections.Generic;
 using System.Windows;
+// ReSharper disable StringLiteralTypo
 
 namespace OpenMod.Unturned.PluginWizard
 {
@@ -40,14 +41,20 @@ namespace OpenMod.Unturned.PluginWizard
                 // input for the custom message.
                 var inputWindow = new UserInputWindow();
 
-                inputWindow.AddInput("$author$", "Author:", "Your name");
                 inputWindow.AddInput("$displayname$", "Display Name:", "Unturned Plugin");
+                inputWindow.AddInput("$description$", "Description:", "An OpenMod Unturned plugin.");
+                inputWindow.AddInput("$author$", "Author:", "Your name");
 
                 inputWindow.ShowDialog();
 
                 foreach (var input in inputWindow.Inputs)
                 {
                     replacementsDictionary.Add(input.Key, input.Value);
+                }
+
+                if (string.IsNullOrWhiteSpace(replacementsDictionary["$displayname$"]))
+                {
+                    replacementsDictionary["$displayname$"] = replacementsDictionary["$projectname$"];
                 }
             }
             catch (Exception ex)

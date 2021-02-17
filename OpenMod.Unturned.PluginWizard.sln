@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnturnedPluginTemplate", "UnturnedPluginTemplate\UnturnedPluginTemplate.csproj", "{22CE5F4E-C95C-4B98-AFD7-E1108FA35CBC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenMod.Unturned.PluginTemplate", "OpenMod.Unturned.PluginTemplate\OpenMod.Unturned.PluginTemplate.csproj", "{22CE5F4E-C95C-4B98-AFD7-E1108FA35CBC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenMod.Unturned.PluginWizard", "OpenMod.Unturned.PluginWizard\OpenMod.Unturned.PluginWizard.csproj", "{2E2BADD8-8578-4269-9ADC-221A91D638E4}"
 EndProject

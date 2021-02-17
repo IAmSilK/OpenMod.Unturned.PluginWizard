@@ -8,7 +8,7 @@
 
   <PropertyGroup>
 	<PackageId>PackageId</PackageId>
-	<PackageDescription>An OpenMod plugin for Unturned.</PackageDescription>
+	<PackageDescription>$description$</PackageDescription>
 	<PackageLicenseExpression>EUPL-1.2</PackageLicenseExpression>
 	<PackageAuthor>$author$</PackageAuthor>
 	<PackageTags>openmod openmod-plugin unturned</PackageTags>

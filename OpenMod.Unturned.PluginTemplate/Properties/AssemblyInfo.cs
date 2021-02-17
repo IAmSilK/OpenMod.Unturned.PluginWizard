@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("UnturnedPluginTemplate")]
+[assembly: AssemblyTitle("OpenMod.Unturned.PluginTemplate")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Stephen White")]
-[assembly: AssemblyProduct("UnturnedPluginTemplate")]
+[assembly: AssemblyProduct("OpenMod.Unturned.PluginTemplate")]
 [assembly: AssemblyCopyright("Copyright © Stephen White 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
