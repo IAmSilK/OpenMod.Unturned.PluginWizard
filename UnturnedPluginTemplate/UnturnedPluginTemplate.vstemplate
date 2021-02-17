@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+	<TemplateData>
+		<Name>OpenMod Unturned Plugin</Name>
+		<Description>An OpenMod Unturned plugin template.</Description>
+		<ProjectType>CSharp</ProjectType>
+		<SortOrder>1000</SortOrder>
+		<CreateNewFolder>true</CreateNewFolder>
+		<DefaultName>UnturnedPlugin</DefaultName>
+		<ProvideDefaultName>true</ProvideDefaultName>
+		<LocationField>Enabled</LocationField>
+		<EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+		<CreateInPlace>true</CreateInPlace>
+		<Icon>OpenModIcon.ico</Icon>
+	</TemplateData>
+	<TemplateContent>
+		<Project TargetFileName="$safeprojectname$.csproj" File="Example.csproj" ReplaceParameters="true">
+			<ProjectItem TargetFileName="$safeprojectname$Plugin.cs" ReplaceParameters="true" ItemType="Content">ExamplePlugin.cs</ProjectItem>
+			<ProjectItem ReplaceParameters="false" TargetFileName="config.yaml">config.yaml</ProjectItem>
+			<ProjectItem ReplaceParameters="false" TargetFileName="translations.yaml">translations.yaml</ProjectItem>
+		</Project>
+	</TemplateContent>
+	<WizardExtension>
+		<Assembly>OpenModUnturnedPluginWizard, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=c8a6f9b9ad67af67</Assembly>
+		<FullClassName>OpenModUnturnedPluginWizard.WizardImplementation</FullClassName>
+	</WizardExtension>
+</VSTemplate>
